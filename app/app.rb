@@ -60,14 +60,14 @@ class App < Sinatra::Base
   get '/books/:id/plus' do
     @book = Book.first!(id: params[:id])
     @book.page += 1
-    @book.save
+    @book.save if @book.valid?
     redirect '/'
   end
 
   get '/books/:id/minus' do
     @book = Book.first!(id: params[:id])
     @book.page -= 1
-    @book.save
+    @book.save if @book.valid?
     redirect '/'
   end
 end
