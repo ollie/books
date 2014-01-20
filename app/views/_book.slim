@@ -1,0 +1,22 @@
+div class="book-item#{ ' book-item-read' if book.read }"
+  .book-item-head
+    h2.book-item-heading
+      span.book-item-name
+        = book.name
+        = ' '
+        span.book-item-author = "(#{ book.author })"
+      span.book-item-action-icons
+        a.glyphicons-sprite.glyphicons-edit< href="/books/#{ book.id }/edit" title="Edit #{ book.name }"
+        a.glyphicons-sprite.glyphicons-delete< href="/books/#{ book.id }/delete" title="Delete #{ book.name }" data-confirm="Really delete #{ book.name }?"
+    p.book-item-percentage
+      span.book-item-action-icons
+        a.glyphicons-sprite.glyphicons-plus< href="/books/#{ book.id }/plus" title="+1 Page"
+        a.glyphicons-sprite.glyphicons-minus< href="/books/#{ book.id }/minus" title="-1 Page"
+        = ' '
+      span.book-item-percentage-pages
+        = "#{ book.page } / #{ book.pages }"
+      = ' '
+      = book.percentage_in_parenthesis
+  .book-item-bar
+    .book-item-bar-completed style="width: #{ book.percentage }%;"
+  p.book-item-path = book.path

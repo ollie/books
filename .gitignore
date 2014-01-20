@@ -1,0 +1,6 @@
+/.sass-cache
+/*.sql
+/tmp/**/*
+!/tmp/.keep
+/log/**/*
+!/log/.keep

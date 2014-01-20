@@ -1,0 +1,9 @@
+h1 Add a Book
+
+p
+  a href="/" &larr; Back
+
+- action_url  = '/books'
+- submit_text = 'Add a Book'
+
+== partial 'form', locals: { book: @book, action_url: action_url, submit_text: submit_text }

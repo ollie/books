@@ -1,0 +1,10 @@
+h1 Books
+
+p
+  a href="/books/new" Add a Book
+
+- if @books
+  == partial :book, collection: @books
+- else
+  p
+    No books. :-(

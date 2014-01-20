@@ -1,0 +1,9 @@
+h1 Edit Book #{ @book.name }
+
+p
+  a href="/" &larr; Back
+
+- action_url  = "/books/#{ @book.id }"
+- submit_text = 'Update Book'
+
+== partial 'form', locals: { book: @book, action_url: action_url, submit_text: submit_text }

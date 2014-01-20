@@ -1,0 +1,63 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bacon (1.2.0)
+    chunky_png (1.2.9)
+    coderay (1.1.0)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    fssm (0.2.10)
+    method_source (0.8.2)
+    pg (0.17.1)
+    pry (0.9.12.4)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    pry-doc (0.4.6)
+      pry (>= 0.9)
+      yard (>= 0.8)
+    rack (1.5.2)
+    rack-protection (1.5.2)
+      rack
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    racksh (1.0.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5)
+    rake (10.1.1)
+    sass (3.2.13)
+    sequel (4.6.0)
+    sinatra (1.4.4)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    sinatra-formhelpers-ng (1.9.0)
+      bacon
+      rack-test
+    sinatra-partial (0.4.0)
+      sinatra
+    slim (2.0.2)
+      temple (~> 0.6.6)
+      tilt (>= 1.3.3, < 2.1)
+    slop (3.4.7)
+    temple (0.6.7)
+    tilt (1.4.1)
+    yard (0.8.7.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  compass (~> 0.12.2)
+  pg (~> 0.17.1)
+  pry (~> 0.9.12.4)
+  pry-doc (~> 0.4.6)
+  racksh (~> 1.0.0)
+  rake (~> 10.1.0)
+  sequel (~> 4.6.0)
+  sinatra (~> 1.4.4)
+  sinatra-formhelpers-ng (~> 1.9.0)
+  sinatra-partial (~> 0.4.0)
+  slim (~> 2.0.2)
