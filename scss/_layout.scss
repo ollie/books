@@ -18,9 +18,10 @@ input.error                       { outline: solid 1px red; }
 .book-item-author                 { font-size: 0.9285rem; color: #6d6d6d; }
 .book-item-percentage             { float: right; margin: 0; color: #6d6d6d; }
 .book-item-percentage-pages       { font-size: 1.1428rem; color: black; }
-.book-item-bar                    { clear: both; margin: 0.5rem 0; background: #e3e3e3; }
-.book-item-bar-completed          { height: 8px; background: #9a9a9a; }
+.book-item-bar                    { clear: both; margin: 0.5rem 0; cursor: pointer; background: #e3e3e3; }
+.book-item-bar-completed          { height: 12px; background: #9a9a9a; }
+.book-item-bar:hover .book-item-bar-completed { background: #666; }
 .book-item-path                   { margin: 0; color: #6d6d6d; }
 
-.book-item-action-icons           { opacity: 0; transition: opacity 0.08s ease-in-out; }
+.book-item-action-icons           { opacity: 0; }
 .book-item:hover .book-item-action-icons { opacity: 1; }

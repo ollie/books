@@ -14,9 +14,13 @@ div class="book-item#{ ' book-item-read' if book.read }"
         a.glyphicons-sprite.glyphicons-minus< href="/books/#{ book.id }/minus" title="-1 Page"
         = ' '
       span.book-item-percentage-pages
-        = "#{ book.page } / #{ book.pages }"
+        span.book-item-page
+          = book.page
+        = ' / '
+        = book.pages
       = ' '
-      = book.percentage_in_parenthesis
-  .book-item-bar
+      span.book-item-percent
+        = book.percentage_in_parenthesis
+  .book-item-bar data-page=(book.page) data-pages=(book.pages) data-percentage=(book.percentage) data-id=(book.id)
     .book-item-bar-completed style="width: #{ book.percentage }%;"
   p.book-item-path = book.path

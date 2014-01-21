@@ -57,6 +57,13 @@ class App < Sinatra::Base
     redirect '/'
   end
 
+  get '/books/:id/page/:page' do
+    @book = Book.first!(id: params[:id])
+    @book.page = params[:page]
+    @book.save if @book.valid?
+    redirect '/'
+  end
+
   get '/books/:id/plus' do
     @book = Book.first!(id: params[:id])
     @book.page += 1
