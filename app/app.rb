@@ -11,7 +11,6 @@ class App < Sinatra::Base
   enable :partial_underscores
   set :partial_template_engine, :slim
   set :slim, layout: :'layouts/application'
-  set :db, Env.db
 
   get '/' do
     @books = BookDecorator.decorate Book.list

@@ -41,5 +41,7 @@ class Env
     require root.join('app', 'book')
     require root.join('app', 'decorator')
     require root.join('app', 'book_decorator')
+
+    db.disconnect # Prevent errors when forking in Passenger
   end
 end
