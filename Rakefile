@@ -45,7 +45,7 @@ namespace :db do
       name:   'Haskell',
       author: 'Wikibooks.org',
       path:   'Haskell.pdf',
-      page:   131,
+      page:   137,
       pages:  597,
     })
 
@@ -117,7 +117,7 @@ namespace :db do
       name:   'Programming Python 4th Edition',
       author: 'Mark Lutz',
       path:   'programming_python_4th_edition.pdf',
-      page:   192,
+      page:   216,
       pages:  1628,
     })
 
