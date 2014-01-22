@@ -8,9 +8,9 @@ $(function() {
 });
 
 $(function() {
-  var Bar = function(selector)
+  var Bar = function($bars)
   {
-    this.$bars = $(selector);
+    this.$bars = $bars;
   };
 
   Bar.prototype.bind = function()
@@ -82,6 +82,6 @@ $(function() {
     location.href = url;
   };
 
-  var bar = new Bar('.book-item-bar');
+  var bar = new Bar( $('.book-item-bar') );
   bar.bind();
 });

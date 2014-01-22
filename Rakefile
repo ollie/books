@@ -36,7 +36,7 @@ namespace :db do
     Book.create({
       name:   'PMI-80 (Assembly)',
       author: 'Ing. Jaroslav Vlach',
-      path:   '~/Code/assembly/retrocip/pmi80_kniha.pdf',
+      path:   'pmi80_kniha.pdf',
       page:   1,
       pages:  108,
     })
@@ -44,7 +44,7 @@ namespace :db do
     Book.create({
       name:   'Haskell',
       author: 'Wikibooks.org',
-      path:   '~/Documents/Haskell/Haskell.pdf',
+      path:   'Haskell.pdf',
       page:   131,
       pages:  597,
     })
@@ -52,7 +52,7 @@ namespace :db do
     Book.create({
       name:   '21st Century C',
       author: 'Ben Klemens',
-      path:   '~/Documents/C/21st_century_c.pdf',
+      path:   '21st_century_c.pdf',
       page:   39,
       pages:  298,
     })
@@ -60,7 +60,7 @@ namespace :db do
     Book.create({
       name:   'The C Programming Language 2nd Edition',
       author: 'Brian W. Kernighan & Dennis M. Ritchie',
-      path:   '~/Documents/C/Ritchie-Kernighan-The_C_Programming_Language_2_ed_.pdf',
+      path:   'Ritchie-Kernighan-The_C_Programming_Language_2_ed_.pdf',
       page:   54,
       pages:  288,
     })
@@ -68,7 +68,7 @@ namespace :db do
     Book.create({
       name:   'Programming Erlang',
       author: 'Joe Armstrong',
-      path:   '~/Documents/Erlang/Programming_Erlang.pdf',
+      path:   'Programming_Erlang.pdf',
       page:   66,
       pages:  526,
     })
@@ -76,7 +76,7 @@ namespace :db do
     Book.create({
       name:   'Erlang Programming',
       author: 'Francesco Cesarini & Simon Thompson',
-      path:   '~/Documents/Erlang/erlang_programming.pdf',
+      path:   'erlang_programming.pdf',
       page:   139,
       pages:  496,
     })
@@ -84,7 +84,7 @@ namespace :db do
     Book.create({
       name:   'Introducing Erlang',
       author: 'Simon St. Laurent',
-      path:   '~/Documents/Erlang/introducing_erlang.pdf',
+      path:   'introducing_erlang.pdf',
       page:   201,
       pages:  201,
     })
@@ -92,7 +92,7 @@ namespace :db do
     Book.create({
       name:   'Learning Cocoa with Objective-C',
       author: 'Paris Buttfield-Addison & Jonathon Manning',
-      path:   '~/Documents/Objective-C/learning_cocoa_with_objective-c_3rd_edition.pdf',
+      path:   'learning_cocoa_with_objective-c_3rd_edition.pdf',
       page:   35,
       pages:  360,
     })
@@ -100,7 +100,7 @@ namespace :db do
     Book.create({
       name:   'Learning Java 4th Edition',
       author: 'Patrick Niemeyer & Daniel Leuck',
-      path:   '~/Documents/Java/learning_java_fourth_edition.pdf',
+      path:   'learning_java_fourth_edition.pdf',
       page:   393,
       pages:  1010,
     })
@@ -108,7 +108,7 @@ namespace :db do
     Book.create({
       name:   'Learning Python 5th Edition',
       author: 'Mark Lutz',
-      path:   '~/Documents/Python/learning_python_fifth_edition.pdf',
+      path:   'learning_python_fifth_edition.pdf',
       page:   186,
       pages:  1594,
     })
@@ -116,7 +116,7 @@ namespace :db do
     Book.create({
       name:   'Programming Python 4th Edition',
       author: 'Mark Lutz',
-      path:   '~/Documents/Python/programming_python_4th_edition.pdf',
+      path:   'programming_python_4th_edition.pdf',
       page:   192,
       pages:  1628,
     })
@@ -124,7 +124,7 @@ namespace :db do
     Book.create({
       name:   'Clean Code',
       author: 'Robert C. Martin',
-      path:   '~/Documents/E-Books/Clean_Code_-_A_Handbook_of_Agile_Software_Craftsmanship.pdf',
+      path:   'Clean_Code_-_A_Handbook_of_Agile_Software_Craftsmanship.pdf',
       page:   114,
       pages:  462,
     })
