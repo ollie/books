@@ -30,7 +30,7 @@ $(function() {
   Bar.prototype.overItem = function(event)
   {
     var $bar           = $(event.currentTarget),
-        $progress      = $bar.find('.book-item-bar-completed'),
+        $progress      = $bar.find('.book-item-bar-progress'),
         $page          = $bar.parents('.book-item').find('.book-item-page'),
         $percentage    = $bar.parents('.book-item').find('.book-item-percent');
 
@@ -59,7 +59,7 @@ $(function() {
   Bar.prototype.restoreItem = function(event)
   {
     var $bar            = $(event.currentTarget),
-        $progress       = $bar.find('.book-item-bar-completed'),
+        $progress       = $bar.find('.book-item-bar-progress'),
         $page           = $bar.parents('.book-item').find('.book-item-page'),
         $percentage     = $bar.parents('.book-item').find('.book-item-percent'),
         originalPage    = $bar.attr('data-page'),

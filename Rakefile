@@ -128,5 +128,21 @@ namespace :db do
       page:   114,
       pages:  462,
     })
+
+    Book.create({
+      name:   'The Art of Assembly Language 2nd Edition',
+      author: 'Randall Hyde',
+      path:   'the_art_of_assembly_language_2nd_edition.pdf',
+      page:   0,
+      pages:  764,
+    })
+
+    Book.create({
+      name:   'Write Great Code',
+      author: 'Randall Hyde',
+      path:   'write_great_code_volume_1.pdf',
+      page:   0,
+      pages:  461,
+    })
   end
 end
