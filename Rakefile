@@ -45,7 +45,7 @@ namespace :db do
       name:   'Haskell',
       author: 'Wikibooks.org',
       path:   'Haskell.pdf',
-      page:   137,
+      page:   166,
       pages:  597,
     })
 
@@ -106,6 +106,14 @@ namespace :db do
     })
 
     Book.create({
+      name:   'Learning Python 4th Edition',
+      author: 'Mark Lutz',
+      path:   'learning_python_fourth_edition.pdf',
+      page:   1213,
+      pages:  1213,
+    })
+
+    Book.create({
       name:   'Learning Python 5th Edition',
       author: 'Mark Lutz',
       path:   'learning_python_fifth_edition.pdf',
@@ -143,6 +151,22 @@ namespace :db do
       path:   'write_great_code_volume_1.pdf',
       page:   0,
       pages:  461,
+    })
+
+    Book.create({
+      name:   'Mobile First',
+      author: 'Luke Wroblewski',
+      path:   'mobile_first.pdf',
+      page:   0,
+      pages:  138,
+    })
+
+    Book.create({
+      name:   'Responsive Web Design',
+      author: 'Ethan Marcotte',
+      path:   'responsive_web_design.pdf',
+      page:   0,
+      pages:  157,
     })
   end
 end
