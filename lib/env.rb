@@ -1,40 +1,21 @@
 require 'logger'
 
 class Env
-  ROOT    = Pathname.new( File.expand_path('../..', __FILE__) )
-  DB_NAME = 'books_development'
-  DB_PATH = "postgres://localhost/#{ DB_NAME }"
+  @settings = {}
 
-  def self.root
-    ROOT
+  def self.configure(*environments, &block)
+    return unless environments.empty? || environments.include?(ENV['RACK_ENV'].to_sym)
+    instance_eval &block
   end
 
-  def self.db_name
-    DB_NAME
-  end
+  def self.set(key, value)
+    @settings[key] = value
 
-  def self.db_path
-    DB_PATH
-  end
-
-  def self.production?
-    ENV['RACK_ENV'] == 'production'
-  end
-
-  def self.db_logger
-    file = if production?
-      root.join('log', 'production.log')
-    else
-      $stdout
+    self.class.instance_eval do
+      define_method key do
+        @settings[key]
+      end unless method_defined? key
     end
-
-     Logger.new file
-  end
-
-  DB = Sequel.connect(DB_PATH, logger: db_logger)
-
-  def self.db
-    DB
   end
 
   def self.require_app_files
@@ -43,5 +24,27 @@ class Env
     require root.join('app', 'book_decorator')
 
     db.disconnect # Prevent errors when forking in Passenger
+  end
+
+  def self.production?
+    ENV['RACK_ENV'] == 'production'
+  end
+
+  configure do
+    set :root, Pathname.new( File.expand_path('../..', __FILE__) )
+    set :db_name, "books_#{ ENV['RACK_ENV'] }"
+    set :db_path, "postgres://localhost/#{ db_name }"
+  end
+
+  configure :production do
+    set :db_logger, Logger.new(root.join('log', 'production.log'))
+  end
+
+  configure :development do
+    set :db_logger, Logger.new($stdout)
+  end
+
+  configure do
+    set :db, Sequel.connect(db_path, logger: db_logger)
   end
 end

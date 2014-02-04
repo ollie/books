@@ -1,6 +1,8 @@
 require 'bundler'
 Bundler.require :default, :development
 
+ENV['RACK_ENV'] ||= 'development'
+
 task :environment do
   require File.expand_path( File.join('..', 'lib', 'env'), __FILE__ )
   Env.require_app_files
@@ -45,8 +47,8 @@ namespace :db do
       name:   'Haskell',
       author: 'Wikibooks.org',
       path:   'Haskell.pdf',
-      page:   166,
-      pages:  597,
+      page:   193,
+      pages:  611,
     })
 
     Book.create({
