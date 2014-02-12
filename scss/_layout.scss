@@ -21,9 +21,11 @@ input.error                       { outline: solid 1px red; }
 .book-item-percentage             { float: right; margin: 0; color: #6d6d6d; }
 .book-item-percentage-pages       { font-size: 1.1428rem; color: black; }
 .book-item-bar                    { clear: both; margin: 0.5rem 0; cursor: pointer; background: #e3e3e3; }
-.book-item-bar-progress          { height: 12px; background: #9a9a9a; }
+.book-item-bar-progress           { height: 12px; background: #9a9a9a; }
 .book-item-bar:hover .book-item-bar-progress { background: #3082e9; }
 .book-item-path                   { margin: 0; color: #6d6d6d; }
 
 .book-item-action-icons           { opacity: 0; }
 .book-item:hover .book-item-action-icons { opacity: 1; }
+
+fieldset                          { margin: 0; padding: 0; border: none; }

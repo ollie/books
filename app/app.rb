@@ -10,7 +10,7 @@ class App < Sinatra::Base
 
   enable :partial_underscores
   set :partial_template_engine, :slim
-  set :slim, layout: :'layouts/application'
+  set :slim, layout: :'layouts/application', pretty: !production?
 
   get '/' do
     @books = BookDecorator.decorate Book.list
