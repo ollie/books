@@ -1,4 +1,5 @@
 class Book < Sequel::Model
+  plugin :decorated
   plugin :timestamps, update_on_create: true
   plugin :validation_helpers
 

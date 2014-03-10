@@ -36,67 +36,11 @@ namespace :db do
   desc 'Seed database'
   task seed: :environment do
     Book.create({
-      name:   'PMI-80 (Assembly)',
-      author: 'Ing. Jaroslav Vlach',
-      path:   'pmi80_kniha.pdf',
-      page:   1,
-      pages:  108,
-    })
-
-    Book.create({
       name:   'Haskell',
       author: 'Wikibooks.org',
       path:   'Haskell.pdf',
-      page:   193,
+      page:   257,
       pages:  611,
-    })
-
-    Book.create({
-      name:   '21st Century C',
-      author: 'Ben Klemens',
-      path:   '21st_century_c.pdf',
-      page:   39,
-      pages:  298,
-    })
-
-    Book.create({
-      name:   'The C Programming Language 2nd Edition',
-      author: 'Brian W. Kernighan & Dennis M. Ritchie',
-      path:   'Ritchie-Kernighan-The_C_Programming_Language_2_ed_.pdf',
-      page:   54,
-      pages:  288,
-    })
-
-    Book.create({
-      name:   'Programming Erlang',
-      author: 'Joe Armstrong',
-      path:   'Programming_Erlang.pdf',
-      page:   66,
-      pages:  526,
-    })
-
-    Book.create({
-      name:   'Erlang Programming',
-      author: 'Francesco Cesarini & Simon Thompson',
-      path:   'erlang_programming.pdf',
-      page:   139,
-      pages:  496,
-    })
-
-    Book.create({
-      name:   'Introducing Erlang',
-      author: 'Simon St. Laurent',
-      path:   'introducing_erlang.pdf',
-      page:   201,
-      pages:  201,
-    })
-
-    Book.create({
-      name:   'Learning Cocoa with Objective-C',
-      author: 'Paris Buttfield-Addison & Jonathon Manning',
-      path:   'learning_cocoa_with_objective-c_3rd_edition.pdf',
-      page:   35,
-      pages:  360,
     })
 
     Book.create({
@@ -108,19 +52,35 @@ namespace :db do
     })
 
     Book.create({
-      name:   'Learning Python 4th Edition',
-      author: 'Mark Lutz',
-      path:   'learning_python_fourth_edition.pdf',
-      page:   1213,
-      pages:  1213,
+      name:   'Erlang Programming',
+      author: 'Francesco Cesarini & Simon Thompson',
+      path:   'erlang_programming.pdf',
+      page:   139,
+      pages:  496,
     })
 
     Book.create({
-      name:   'Learning Python 5th Edition',
-      author: 'Mark Lutz',
-      path:   'learning_python_fifth_edition.pdf',
-      page:   186,
-      pages:  1594,
+      name:   'Clean Code',
+      author: 'Robert C. Martin',
+      path:   'Clean_Code_-_A_Handbook_of_Agile_Software_Craftsmanship.pdf',
+      page:   114,
+      pages:  462,
+    })
+
+    Book.create({
+      name:   'Haskell and Yesod',
+      author: 'Michael Snoyman',
+      path:   'Haskell and Yesod.pdf',
+      page:   63,
+      pages:  296,
+    })
+
+    Book.create({
+      name:   'The C Programming Language 2nd Edition',
+      author: 'Brian W. Kernighan & Dennis M. Ritchie',
+      path:   'Ritchie-Kernighan-The_C_Programming_Language_2_ed_.pdf',
+      page:   54,
+      pages:  288,
     })
 
     Book.create({
@@ -132,11 +92,43 @@ namespace :db do
     })
 
     Book.create({
-      name:   'Clean Code',
-      author: 'Robert C. Martin',
-      path:   'Clean_Code_-_A_Handbook_of_Agile_Software_Craftsmanship.pdf',
-      page:   114,
-      pages:  462,
+      name:   '21st Century C',
+      author: 'Ben Klemens',
+      path:   '21st_century_c.pdf',
+      page:   39,
+      pages:  298,
+    })
+
+    Book.create({
+      name:   'Programming Erlang',
+      author: 'Joe Armstrong',
+      path:   'Programming_Erlang.pdf',
+      page:   66,
+      pages:  526,
+    })
+
+    Book.create({
+      name:   'Learning Python 5th Edition',
+      author: 'Mark Lutz',
+      path:   'learning_python_fifth_edition.pdf',
+      page:   186,
+      pages:  1594,
+    })
+
+    Book.create({
+      name:   'Learning Cocoa with Objective-C',
+      author: 'Paris Buttfield-Addison & Jonathon Manning',
+      path:   'learning_cocoa_with_objective-c_3rd_edition.pdf',
+      page:   35,
+      pages:  360,
+    })
+
+    Book.create({
+      name:   'PMI-80 (Assembly)',
+      author: 'Ing. Jaroslav Vlach',
+      path:   'pmi80_kniha.pdf',
+      page:   1,
+      pages:  108,
     })
 
     Book.create({
@@ -169,6 +161,30 @@ namespace :db do
       path:   'responsive_web_design.pdf',
       page:   0,
       pages:  157,
+    })
+
+    Book.create({
+      name:   'Guide to Better Smalltalk',
+      author: 'Kent Beck',
+      path:   'Kent_Becks_guide_to_better_Smalltalk.pdf',
+      page:   0,
+      pages:  427,
+    })
+
+    Book.create({
+      name:   'Introducing Erlang',
+      author: 'Simon St. Laurent',
+      path:   'introducing_erlang.pdf',
+      page:   201,
+      pages:  201,
+    })
+
+    Book.create({
+      name:   'Learning Python 4th Edition',
+      author: 'Mark Lutz',
+      path:   'learning_python_fourth_edition.pdf',
+      page:   1213,
+      pages:  1213,
     })
   end
 end

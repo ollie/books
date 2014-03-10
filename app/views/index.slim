@@ -4,7 +4,7 @@ p
   a href="/books/new" Add a Book
 
 - if @books
-  == partial :book, collection: @books
+  == partial :book, collection: @books.decorate_each(BookDecorator)
 - else
   p
     No books. :-(
