@@ -4,7 +4,9 @@ html
     title Books
     link rel="stylesheet" href="/stylesheets/master.css"
   body
-    == yield
+    .container
+      == yield
 
-    script src="/javascripts/vendor/jquery-2.0.3.min.js"
+    script src="/javascripts/vendor/jquery-2.1.0.min.js"
+    script src="/javascripts/vendor/bootstrap.min.js"
     script src="/javascripts/application.js"

@@ -1,26 +1,16 @@
-div class="book-item#{ ' book-item-read' if book.read }"
-  .book-item-head
-    h2.book-item-heading
-      span.book-item-name
-        a href="/books/#{ book.id }/edit" title="Edit #{ book.name }"
-          = book.name
-        = ' '
-        span.book-item-author = "(#{ book.author })"
-      span.book-item-action-icons
-        a.glyphicons-sprite.glyphicons-delete< href="/books/#{ book.id }/delete" title="Delete #{ book.name }" data-confirm="Really delete #{ book.name }?"
-    p.book-item-percentage
-      span.book-item-action-icons
-        a.glyphicons-sprite.glyphicons-plus< href="/books/#{ book.id }/plus" title="+1 Page"
-        a.glyphicons-sprite.glyphicons-minus< href="/books/#{ book.id }/minus" title="-1 Page"
-        = ' '
-      span.book-item-percentage-pages
-        span.book-item-page
-          = book.page
-        = ' / '
-        = book.pages
-      = ' '
-      span.book-item-percent
-        = book.percentage_in_parenthesis
-  .book-item-bar data-page=(book.page) data-pages=(book.pages) data-percentage=(book.percentage) data-id=(book.id)
-    .book-item-bar-progress style="width: #{ book.percentage }%;"
-  p.book-item-path = book.path
+tr
+  td.col-md-4
+    a href="/books/#{ book.id }/edit" title="Edit #{ book.name }"
+      = book.name
+    br
+    small = book.author
+
+  td.col-md-7
+    .progress.progress-striped
+      .progress-bar style="width: #{ book.percentage }%" class=(book.progress_bar_type)
+        span = "#{ book.rounded_percentage } %"
+
+  td.col-md-1.text-center
+    = book.page
+    = ' / '
+    = book.pages

@@ -1,9 +1,0 @@
-@import "glyphicons/*.png";
-@include all-glyphicons-sprites;
-
-.glyphicons-sprite          { display: inline-block; width: 16px; height: 16px; }
-.glyphicons-star-off:hover  { background-position: 0 -32px; }
-.glyphicons-plus,
-.glyphicons-minus           { width: 12px; height: 12px; opacity: 0.3; }
-.glyphicons-plus:hover,
-.glyphicons-minus:hover     { opacity: 1; }

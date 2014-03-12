@@ -1,10 +1,18 @@
-h1 Books
+.page-header
+  h1 Books
 
 p
-  a href="/books/new" Add a Book
+  a.btn.btn-primary href="/books/new" Add a Book
 
 - if @books
-  == partial :book, collection: @books.decorate_each(BookDecorator)
+  table.table
+    thead
+      tr
+        th Name
+        th Percentage
+        th.text-center Page
+    tbody
+      == partial :book, collection: @books.decorate_each(BookDecorator)
 - else
-  p
-    No books. :-(
+  .alert.alert-info
+    p No books. :-(

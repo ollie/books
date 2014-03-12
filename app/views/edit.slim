@@ -1,4 +1,5 @@
-h1 Edit Book #{ @book.name }
+.page-header
+  h1 Edit Book #{ @book.name }
 
 p
   a href="/" &larr; Back
@@ -6,4 +7,11 @@ p
 - action_url  = "/books/#{ @book.id }"
 - submit_text = 'Update Book'
 
-== partial 'form', locals: { book: @book, action_url: action_url, submit_text: submit_text }
+.row
+  .col-md-6
+    == partial 'form', locals: { book: @book, action_url: action_url, submit_text: submit_text }
+
+  .col-md-6
+    p.text-right
+      a.btn.btn-danger href="/books/#{ @book.id }/delete" title="Delete #{ @book.name }" data-confirm="Really delete #{ @book.name }?"
+        = "Delete #{ @book.name }"
