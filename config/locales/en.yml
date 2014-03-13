@@ -1,0 +1,5 @@
+en:
+  book_created: 'Book added.'
+  book_updated: 'Book updated.'
+  book_destroyed: 'Book deleted.'
+  could_not_save_book: "Can't do that, mon."

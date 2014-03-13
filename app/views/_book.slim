@@ -1,13 +1,13 @@
 tr
   td.col-md-4
-    a href="/books/#{ book.id }/edit" title="Edit #{ book.name }"
+    a href=url("/books/#{ book.id }/edit") title="Edit #{ book.name }"
       = book.name
     br
     small = book.author
 
   td.col-md-7
     .progress.progress-striped
-      .progress-bar style="width: #{ book.percentage }%" class=(book.progress_bar_type)
+      .progress-bar style="width: #{ book.percentage }%" class=book.progress_bar_type
         span = "#{ book.rounded_percentage } %"
 
   td.col-md-1.text-center

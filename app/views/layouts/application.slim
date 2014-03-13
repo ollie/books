@@ -5,6 +5,7 @@ html
     link rel="stylesheet" href="/stylesheets/master.css"
   body
     .container
+      == partial 'layouts/flash'
       == yield
 
     script src="/javascripts/vendor/jquery-2.1.0.min.js"

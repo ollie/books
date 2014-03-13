@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'sinatra'                 , '~> 1.4'   # Web app
 gem 'sinatra-partial'         , '~> 0.4'   # Sinatra partials
 gem 'sinatra-formhelpers-huii', '~> 0.0.2' # Sinatra form helpers
+gem 'sinatra-flash'           , '~> 0.3'   # Flash messages
+gem 'i18n'                    , '~> 0.6'   # Translations
 gem 'pg'                      , '~> 0.17'  # Database
 gem 'sequel'                  , '~> 4.8'   # Database toolkit
 gem 'sequel_pg'               , '~> 1.6', require: 'sequel'  # C adapter

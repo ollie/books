@@ -1,10 +1,9 @@
 .page-header
   h1 Add a Book
 
-p
-  a href="/" &larr; Back
-
-- action_url  = '/books'
+- action_url  = url('/books')
 - submit_text = 'Add a Book'
 
-== partial 'form', locals: { book: @book, action_url: action_url, submit_text: submit_text }
+.row
+  .col-md-6
+    == partial 'form', locals: { book: @book, action_url: action_url, submit_text: submit_text }

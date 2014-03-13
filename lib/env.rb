@@ -18,6 +18,12 @@ class Env
     end
   end
 
+  def self.load_translations
+    I18n.load_path = Dir[ root.join('config/locales/**/*.{rb,yml}') ]
+    I18n.backend.load_translations
+    I18n.enforce_available_locales = true # TODO: Shows deprecation warning if not set, check back later.
+  end
+
   def self.require_app_files
     require root.join('app', 'book')
     require root.join('app', 'decorator')
@@ -34,6 +40,8 @@ class Env
     set :root, Pathname.new( File.expand_path('../..', __FILE__) )
     set :db_name, "books_#{ ENV['RACK_ENV'] }"
     set :db_path, "postgres://localhost/#{ db_name }"
+
+    load_translations
   end
 
   configure :production do
