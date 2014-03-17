@@ -4,3 +4,6 @@
 !/tmp/.keep
 /log/**/*
 !/log/.keep
+
+/books_development.rb
+/books_test.rb

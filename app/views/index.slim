@@ -4,7 +4,7 @@
 p
   a.btn.btn-primary href=url("/books/new") Add a Book
 
-- if @books
+- unless @books.empty?
   table.table
     thead
       tr

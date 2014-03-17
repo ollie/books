@@ -2,21 +2,21 @@
   .row
     .col-md-8
       .form-group class=('has-error' if book.errors.on(:name))
-        == f.input :name, { value: book.name, placeholder: 'Book Name', class: 'form-control' }
+        == f.input :name, value: book.name, placeholder: 'Book Name', class: 'form-control'
     .col-md-2
       .form-group class=('has-error' if book.errors.on(:page))
-        == f.input :page, { value: book.page, placeholder: 'Page', class: 'form-control text-center' }
+        == f.input :page, type: 'number', value: book.page, placeholder: 'Page', class: 'form-control text-center'
     .col-md-2
       .form-group class=('has-error' if book.errors.on(:pages))
-        == f.input :pages, { value: book.pages, placeholder: 'Total', class: 'form-control text-center' }
+        == f.input :pages, type: 'number', value: book.pages, placeholder: 'Total', class: 'form-control text-center'
   .row
     .col-md-12
       .form-group class=('has-error' if book.errors.on(:author))
-        == f.input :author, { value: book.author, placeholder: 'Book Author', class: 'form-control' }
+        == f.input :author, value: book.author, placeholder: 'Book Author', class: 'form-control'
   .row
     .col-md-12
       .form-group class=('has-error' if book.errors.on(:path))
-        == f.input :path, { value: book.path, placeholder: 'Book Path', class: 'form-control' }
+        == f.input :path, value: book.path, placeholder: 'Book Path', class: 'form-control'
   .row
     .col-md-12
       button.btn.btn-primary type="submit" = submit_text
