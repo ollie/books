@@ -3,3 +3,9 @@ en:
   book_updated: 'Book updated.'
   book_destroyed: 'Book deleted.'
   could_not_save_book: "Can't do that, mon."
+  books_reading: 'Reading'
+  books_new: 'New'
+  books_read: 'Read'
+  no_books_reading: 'You are not reading anything. :('
+  no_books_new: 'No new books.'
+  no_books_read: 'You have not read anything yet.'

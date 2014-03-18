@@ -3,6 +3,18 @@ class Book < Sequel::Model
   plugin :timestamps, update_on_create: true
   plugin :validation_helpers
 
+  def self.state_reading
+    exclude(read: true).where { page > 0 }.order(Sequel.desc(:percentage), :created_at)
+  end
+
+  def self.state_new
+    exclude(read: true).where(page: 0).order(Sequel.desc(:percentage), :created_at)
+  end
+
+  def self.state_read
+    where(read: true).order(:created_at)
+  end
+
   def self.list
     order(:read, Sequel.desc(:percentage), :created_at)
   end

@@ -4,15 +4,6 @@
 p
   a.btn.btn-primary href=url("/books/new") Add a Book
 
-- unless @books.empty?
-  table.table
-    thead
-      tr
-        th Name
-        th Percentage
-        th.text-center Page
-    tbody
-      == partial :book, collection: @books.decorate_each(BookDecorator)
-- else
-  .alert.alert-info
-    p No books. :-(
+== partial :books_table, locals: { state: :reading, books: @books_reading }
+== partial :books_table, locals: { state: :new,     books: @books_new }
+== partial :books_table, locals: { state: :read,    books: @books_read }

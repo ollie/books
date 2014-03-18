@@ -9,4 +9,5 @@ Tiny Sinatra app for managing books I read.
     rake db:drop         # Drop database
     rake db:dump         # Dump database as Ruby file
     rake db:load         # Load books into the database
+    take db:empty        # Empty database
     rake db:dump_as_sql  # Dump database

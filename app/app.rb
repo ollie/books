@@ -17,7 +17,9 @@ class App < Sinatra::Base
   set :slim, layout: :'layouts/application', pretty: !production?
 
   get '/' do
-    @books = Book.list
+    @books_reading = Book.state_reading
+    @books_new     = Book.state_new
+    @books_read    = Book.state_read
     slim :index
   end
 

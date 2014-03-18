@@ -45,11 +45,18 @@ namespace :db do
     sh "sequel -E -m db/migrations #{ Env.db_path }"
   end
 
+  desc 'Empty database'
+  task empty: :setup do
+    Env.db[:books].delete
+  end
+
   desc 'Dump database as Ruby file'
   task dump: :models do
     abort if Book.count.zero?
+    file = Env.root.join("books_#{ ENV['RACK_ENV'] }.rb")
+    puts "Dumping to #{ file }"
 
-    File.open( Env.root.join("books_#{ ENV['RACK_ENV'] }.rb"), 'w' ) do |file|
+    File.open(file, 'w') do |file|
       file << "BOOKS = [\n"
 
       Book.list.each do |book|
@@ -69,11 +76,9 @@ namespace :db do
   end
 
   desc 'Load books into the database'
-  task load: :models do
+  task load: [ :models, :empty ] do
     require Env.root.join("books_#{ ENV['RACK_ENV'] }.rb")
     abort if BOOKS.empty?
-
-    Env.db[:books].delete
 
     BOOKS.each do |book|
       Book.create(book)

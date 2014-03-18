@@ -5,10 +5,10 @@
         == f.input :name, value: book.name, placeholder: 'Book Name', class: 'form-control', autofocus: true
     .col-md-2
       .form-group class=('has-error' if book.errors.on(:page))
-        == f.input :page, type: 'number', value: book.page, placeholder: 'Page', class: 'form-control text-center'
+        == f.input :page, type: 'number', value: book.page, min: 0, max: book.pages, placeholder: 'Page', class: 'form-control text-center'
     .col-md-2
       .form-group class=('has-error' if book.errors.on(:pages))
-        == f.input :pages, type: 'number', value: book.pages, placeholder: 'Total', class: 'form-control text-center'
+        == f.input :pages, type: 'number', value: book.pages, min: 0, placeholder: 'Total', class: 'form-control text-center'
   .row
     .col-md-12
       .form-group class=('has-error' if book.errors.on(:author))

@@ -42,6 +42,13 @@ BOOKS = [
     pages:  288,
   },
   {
+    name:   "Realm of Racket",
+    author: "D. V. Horn, C. Barski, M. Felleisen",
+    path:   "Realm-of-Racket.pdf",
+    page:   56,
+    pages:  316,
+  },
+  {
     name:   "Programming Python 4th Edition",
     author: "Mark Lutz",
     path:   "programming_python_4th_edition.pdf",
@@ -80,14 +87,14 @@ BOOKS = [
     name:   "The Scheme Programming Language, 4th Edition",
     author: "R. Kent Dybvig",
     path:   "The.Scheme.Programming.Language.4th.Edition.pdf",
-    page:   27,
+    page:   31,
     pages:  400,
   },
   {
     name:   "PMI-80 (Assembly)",
     author: "Ing. Jaroslav Vlach",
     path:   "pmi80_kniha.pdf",
-    page:   1,
+    page:   0,
     pages:  108,
   },
   {
