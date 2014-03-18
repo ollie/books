@@ -2,7 +2,7 @@
   .row
     .col-md-8
       .form-group class=('has-error' if book.errors.on(:name))
-        == f.input :name, value: book.name, placeholder: 'Book Name', class: 'form-control'
+        == f.input :name, value: book.name, placeholder: 'Book Name', class: 'form-control', autofocus: true
     .col-md-2
       .form-group class=('has-error' if book.errors.on(:page))
         == f.input :page, type: 'number', value: book.page, placeholder: 'Page', class: 'form-control text-center'
