@@ -14,6 +14,13 @@ BOOKS = [
     pages:  1010,
   },
   {
+    name:   "Realm of Racket",
+    author: "D. V. Horn, C. Barski, M. Felleisen",
+    path:   "Realm-of-Racket.pdf",
+    page:   103,
+    pages:  316,
+  },
+  {
     name:   "Erlang Programming",
     author: "Francesco Cesarini & Simon Thompson",
     path:   "erlang_programming.pdf",
@@ -40,13 +47,6 @@ BOOKS = [
     path:   "Ritchie-Kernighan-The_C_Programming_Language_2_ed_.pdf",
     page:   54,
     pages:  288,
-  },
-  {
-    name:   "Realm of Racket",
-    author: "D. V. Horn, C. Barski, M. Felleisen",
-    path:   "Realm-of-Racket.pdf",
-    page:   56,
-    pages:  316,
   },
   {
     name:   "Programming Python 4th Edition",

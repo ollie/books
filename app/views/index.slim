@@ -1,8 +1,8 @@
 .page-header
-  h1 Books
-
-p
-  a.btn.btn-primary href=url("/books/new") Add a Book
+  h1
+    = 'Books'
+    = ' '
+    a.btn.btn-primary.btn-with-space href=url("/books/new") Add a Book
 
 == partial :books_table, locals: { state: :reading, books: @books_reading }
 == partial :books_table, locals: { state: :new,     books: @books_new }
