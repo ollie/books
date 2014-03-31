@@ -12,7 +12,7 @@ gem 'slim'                    , '~> 2.0'   # Templating
 gem 'compass'                 , '~> 0.12'  # CSS preprocessor
 
 group :development do
-  gem 'rake'  , '~> 10.1', require: false # Task runner
+  gem 'rake'  , '~> 10.2', require: false # Task runner
   gem 'racksh', '~> 1.0' # Console for Rack based ruby web applications
   gem 'pry'   , '~> 0.9' # Debugging
 end
