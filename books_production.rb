@@ -1,5 +1,12 @@
 BOOKS = [
   {
+    name:   "Realm of Racket",
+    author: "D. V. Horn, C. Barski, M. Felleisen",
+    path:   "Realm-of-Racket.pdf",
+    page:   193,
+    pages:  316,
+  },
+  {
     name:   "Haskell",
     author: "Wikibooks.org",
     path:   "Haskell.pdf",
@@ -12,13 +19,6 @@ BOOKS = [
     path:   "learning_java_fourth_edition.pdf",
     page:   393,
     pages:  1010,
-  },
-  {
-    name:   "Realm of Racket",
-    author: "D. V. Horn, C. Barski, M. Felleisen",
-    path:   "Realm-of-Racket.pdf",
-    page:   103,
-    pages:  316,
   },
   {
     name:   "Erlang Programming",
@@ -138,6 +138,13 @@ BOOKS = [
     path:   "ANSI_Common_Lisp.pdf",
     page:   0,
     pages:  450,
+  },
+  {
+    name:   "On Lisp: Advanced Techniques for Common Lisp",
+    author: "Paul Graham",
+    path:   "On_Lisp.pdf",
+    page:   0,
+    pages:  426,
   },
   {
     name:   "Introducing Erlang",
