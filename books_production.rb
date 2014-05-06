@@ -1,12 +1,5 @@
 BOOKS = [
   {
-    name:   "Realm of Racket",
-    author: "D. V. Horn, C. Barski, M. Felleisen",
-    path:   "Realm-of-Racket.pdf",
-    page:   193,
-    pages:  316,
-  },
-  {
     name:   "Haskell",
     author: "Wikibooks.org",
     path:   "Haskell.pdf",
@@ -91,6 +84,20 @@ BOOKS = [
     pages:  400,
   },
   {
+    name:   "How to Design Programs, Second Edition",
+    author: "Felleisen, Findler, Flatt & Krishnamurthi",
+    path:   "http://www.ccs.neu.edu/home/matthias/HtDP2e/part_prologue.html#string-append",
+    page:   1,
+    pages:  13,
+  },
+  {
+    name:   "The Racket Guide",
+    author: "M. Flatt, R. B. Findler, PLT",
+    path:   "Racket-Guide.pdf",
+    page:   11,
+    pages:  369,
+  },
+  {
     name:   "PMI-80 (Assembly)",
     author: "Ing. Jaroslav Vlach",
     path:   "pmi80_kniha.pdf",
@@ -159,5 +166,12 @@ BOOKS = [
     path:   "learning_python_fourth_edition.pdf",
     page:   1213,
     pages:  1213,
+  },
+  {
+    name:   "Realm of Racket",
+    author: "D. V. Horn, C. Barski, M. Felleisen",
+    path:   "Realm-of-Racket.pdf",
+    page:   316,
+    pages:  316,
   },
 ]
