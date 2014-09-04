@@ -14,6 +14,13 @@ BOOKS = [
     pages:  1010,
   },
   {
+    name:   "Practical Common Lisp",
+    author: "Peter Seibel",
+    path:   "Practical_Common_Lisp.pdf",
+    page:   220,
+    pages:  581,
+  },
+  {
     name:   "Erlang Programming",
     author: "Francesco Cesarini & Simon Thompson",
     path:   "erlang_programming.pdf",
@@ -42,6 +49,27 @@ BOOKS = [
     pages:  288,
   },
   {
+    name:   "Learning Cocoa with Objective-C",
+    author: "Paris Buttfield-Addison & Jonathon Manning",
+    path:   "learning_cocoa_with_objective-c_3rd_edition.pdf",
+    page:   66,
+    pages:  360,
+  },
+  {
+    name:   "ANSI Common Lisp",
+    author: "Paul Graham",
+    path:   "ANSI_Common_Lisp.pdf",
+    page:   74,
+    pages:  450,
+  },
+  {
+    name:   "RubyMotion",
+    author: "Clay Allsopp",
+    path:   "ruby_motion.pdf",
+    page:   15,
+    pages:  108,
+  },
+  {
     name:   "Programming Python 4th Edition",
     author: "Mark Lutz",
     path:   "programming_python_4th_edition.pdf",
@@ -54,6 +82,13 @@ BOOKS = [
     path:   "21st_century_c.pdf",
     page:   39,
     pages:  298,
+  },
+  {
+    name:   "Programming in Haskell",
+    author: "Graham Hutton",
+    path:   "programming-in-haskell.pdf",
+    page:   24,
+    pages:  184,
   },
   {
     name:   "Programming Erlang",
@@ -70,13 +105,6 @@ BOOKS = [
     pages:  1594,
   },
   {
-    name:   "Learning Cocoa with Objective-C",
-    author: "Paris Buttfield-Addison & Jonathon Manning",
-    path:   "learning_cocoa_with_objective-c_3rd_edition.pdf",
-    page:   35,
-    pages:  360,
-  },
-  {
     name:   "The Scheme Programming Language, 4th Edition",
     author: "R. Kent Dybvig",
     path:   "The.Scheme.Programming.Language.4th.Edition.pdf",
@@ -89,13 +117,6 @@ BOOKS = [
     path:   "http://www.ccs.neu.edu/home/matthias/HtDP2e/part_prologue.html#string-append",
     page:   1,
     pages:  13,
-  },
-  {
-    name:   "The Racket Guide",
-    author: "M. Flatt, R. B. Findler, PLT",
-    path:   "Racket-Guide.pdf",
-    page:   11,
-    pages:  369,
   },
   {
     name:   "PMI-80 (Assembly)",
@@ -140,18 +161,32 @@ BOOKS = [
     pages:  427,
   },
   {
-    name:   "ANSI Common Lisp",
-    author: "Paul Graham",
-    path:   "ANSI_Common_Lisp.pdf",
-    page:   0,
-    pages:  450,
-  },
-  {
     name:   "On Lisp: Advanced Techniques for Common Lisp",
     author: "Paul Graham",
     path:   "On_Lisp.pdf",
     page:   0,
     pages:  426,
+  },
+  {
+    name:   "The Racket Guide",
+    author: "M. Flatt, R. B. Findler, PLT",
+    path:   "Racket-Guide.pdf",
+    page:   0,
+    pages:  369,
+  },
+  {
+    name:   "Deep into Pharo",
+    author: "Bergel, Cassou, Ducasse, Laval",
+    path:   "Deep_into_Pharo_PBE2.pdf",
+    page:   0,
+    pages:  420,
+  },
+  {
+    name:   "SICP",
+    author: "H. Abelson, G. J. Sussman, J. Sussman",
+    path:   "sicp.pdf",
+    page:   0,
+    pages:  634,
   },
   {
     name:   "Introducing Erlang",
