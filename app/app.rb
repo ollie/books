@@ -1,6 +1,5 @@
 require 'sinatra/form_helpers'
 require File.expand_path( File.join('..', '..', 'lib', 'env'), __FILE__ )
-require File.expand_path( File.join('..', '..', 'lib', 'sequel', 'plugins', 'decorated'), __FILE__ )
 
 Env.require_app_files
 

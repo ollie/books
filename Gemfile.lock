@@ -1,32 +1,57 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    ast (2.0.0)
+    astrolabe (1.3.0)
+      parser (>= 2.2.0.pre.3, < 3.0)
     chunky_png (1.3.1)
     coderay (1.1.0)
-    compass (0.12.6)
+    compass (1.0.1)
       chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.2.19)
-    fssm (0.2.10)
-    i18n (0.6.9)
+      compass-core (~> 1.0.1)
+      compass-import-once (~> 1.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      sass (>= 3.3.13, < 3.5)
+    compass-core (1.0.1)
+      multi_json (~> 1.0)
+      sass (>= 3.3.0, < 3.5)
+    compass-import-once (1.0.5)
+      sass (>= 3.2, < 3.5)
+    ffi (1.9.3)
+    i18n (0.6.11)
     method_source (0.8.2)
+    multi_json (1.10.1)
+    parser (2.2.0.pre.4)
+      ast (>= 1.1, < 3.0)
+      slop (~> 3.4, >= 3.4.5)
     pg (0.17.1)
-    pry (0.9.12.6)
-      coderay (~> 1.0)
-      method_source (~> 0.8)
+    powerpack (0.0.9)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-doc (0.6.0)
+      pry (~> 0.9)
+      yard (~> 0.8)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
-    rack-test (0.6.2)
-      rack (>= 1.0)
-    racksh (1.0.0)
-      rack (>= 1.0)
-      rack-test (>= 0.5)
-    rake (10.3.1)
-    sass (3.2.19)
-    sequel (4.10.0)
-    sequel_pg (1.6.9)
+    rainbow (2.0.0)
+    rake (10.3.2)
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
+    rubocop (0.26.0)
+      astrolabe (~> 1.3)
+      parser (>= 2.2.0.pre.4, < 3.0)
+      powerpack (~> 0.0.6)
+      rainbow (>= 1.99.1, < 3.0)
+      ruby-progressbar (~> 1.4)
+    ruby-progressbar (1.5.1)
+    sass (3.4.2)
+    sequel (4.14.0)
+    sequel_pg (1.6.10)
       pg (>= 0.8.0)
       sequel (>= 3.39.0)
     sinatra (1.4.5)
@@ -38,27 +63,29 @@ GEM
     sinatra-formhelpers-huii (0.0.2)
     sinatra-partial (0.4.0)
       sinatra
-    slim (2.0.2)
+    slim (2.0.3)
       temple (~> 0.6.6)
       tilt (>= 1.3.3, < 2.1)
-    slop (3.5.0)
-    temple (0.6.7)
+    slop (3.6.0)
+    temple (0.6.8)
     tilt (1.4.1)
+    yard (0.8.7.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass (~> 0.12)
-  i18n (~> 0.6)
-  pg (~> 0.17)
-  pry (~> 0.9)
-  racksh (~> 1.0)
-  rake (~> 10.2)
-  sequel (~> 4.8)
-  sequel_pg (~> 1.6)
-  sinatra (~> 1.4)
-  sinatra-flash (~> 0.3)
-  sinatra-formhelpers-huii (~> 0.0.2)
-  sinatra-partial (~> 0.4)
-  slim (~> 2.0)
+  compass
+  i18n
+  pg
+  pry
+  pry-doc
+  rake
+  rubocop
+  sequel
+  sequel_pg
+  sinatra (>= 1.4)
+  sinatra-flash
+  sinatra-formhelpers-huii
+  sinatra-partial
+  slim

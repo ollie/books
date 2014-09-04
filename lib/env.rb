@@ -25,6 +25,7 @@ class Env
   end
 
   def self.require_app_files
+    require root.join('lib', 'sequel', 'plugins', 'decorated')
     require root.join('app', 'book')
     require root.join('app', 'decorator')
     require root.join('app', 'book_decorator')

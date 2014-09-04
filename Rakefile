@@ -90,3 +90,11 @@ namespace :db do
     sh "pg_dump #{ Env.db_path } > books_development.sql"
   end
 end
+
+desc 'Run console'
+task console: :environment do
+  Pry.start
+end
+
+desc 'Run console'
+task c: :console
