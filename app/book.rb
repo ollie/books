@@ -1,14 +1,19 @@
+# Database model for a single book
 class Book < Sequel::Model
   plugin :decorated
   plugin :timestamps, update_on_create: true
   plugin :validation_helpers
 
   def self.state_reading
-    exclude(read: true).where { page > 0 }.order(Sequel.desc(:percentage), :created_at)
+    exclude(read: true)
+      .where { page > 0 }
+      .order(Sequel.desc(:percentage), :created_at)
   end
 
   def self.state_new
-    exclude(read: true).where(page: 0).order(Sequel.desc(:percentage), :created_at)
+    exclude(read: true)
+      .where(page: 0)
+      .order(Sequel.desc(:percentage), :created_at)
   end
 
   def self.state_read
@@ -39,11 +44,10 @@ class Book < Sequel::Model
     self.read = page == pages
   end
 
-
   def validate
     super
-    validates_presence [ :name, :path, :page, :pages ]
-    validates_integer  [ :page, :pages ]
-    validates_includes (0..pages), :page if pages
+    validates_presence [:name, :path, :page, :pages]
+    validates_integer [:page, :pages]
+    validates_includes((0..pages), :page) if pages
   end
 end

@@ -3,12 +3,14 @@ Bundler.require :default, :development
 
 ENV['RACK_ENV'] ||= 'development'
 
+# Extend the Class string
 class String
+  # Undindent a string built with HEREDOCs.
   def unindent(number_of_chars = nil)
     number_of_chars = lines.first.index(/[^ ]/) unless number_of_chars
 
     joined = lines.map do |line|
-      line.gsub(%r{^ {#{ number_of_chars }}}, '')
+      line.gsub(/^ {#{ number_of_chars }}/, '')
     end.join
 
     joined
@@ -16,17 +18,17 @@ class String
 end
 
 task :environment do
-  require File.expand_path( File.join('..', 'lib', 'env'), __FILE__ )
+  require File.expand_path('../lib/env', __FILE__)
   Env.require_app_files
 end
 
 task :setup do
-  require File.expand_path( File.join('..', 'lib', 'env'), __FILE__ )
+  require File.expand_path('../lib/env', __FILE__)
 end
 
 task models: :setup do
-  require File.expand_path( File.join('..', 'lib', 'sequel', 'plugins', 'decorated'), __FILE__ )
-  require File.expand_path( File.join('..', 'app', 'book'), __FILE__ )
+  require File.expand_path('../lib/sequel/plugins/decorated', __FILE__)
+  require File.expand_path('../app/book', __FILE__)
 end
 
 namespace :db do
@@ -53,10 +55,10 @@ namespace :db do
   desc 'Dump database as Ruby file'
   task dump: :models do
     abort if Book.count.zero?
-    file = Env.root.join("books_#{ ENV['RACK_ENV'] }.rb")
+    file_path = Env.root.join("books_#{ ENV['RACK_ENV'] }.rb")
     puts "Dumping to #{ file }"
 
-    File.open(file, 'w') do |file|
+    File.open(file_path, 'w') do |file|
       file << "BOOKS = [\n"
 
       Book.list.each do |book|
@@ -76,7 +78,7 @@ namespace :db do
   end
 
   desc 'Load books into the database'
-  task load: [ :models, :empty ] do
+  task load: [:models, :empty] do
     require Env.root.join("books_#{ ENV['RACK_ENV'] }.rb")
     abort if BOOKS.empty?
 

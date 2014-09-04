@@ -1,3 +1,4 @@
+# View sugar helpers for a book model
 class BookDecorator < Decorator
   def rounded_percentage
     percentage = object.percentage

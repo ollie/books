@@ -1,11 +1,13 @@
 require 'logger'
 
+# Some basic settings
 class Env
   @settings = {}
 
   def self.configure(*environments, &block)
-    return unless environments.empty? || environments.include?(ENV['RACK_ENV'].to_sym)
-    instance_eval &block
+    return unless environments.empty? ||
+                  environments.include?(ENV['RACK_ENV'].to_sym)
+    instance_eval(&block)
   end
 
   def self.set(key, value)
@@ -19,9 +21,10 @@ class Env
   end
 
   def self.load_translations
-    I18n.load_path = Dir[ root.join('config/locales/**/*.{rb,yml}') ]
+    I18n.load_path = Dir[root.join('config/locales/**/*.{rb,yml}')]
     I18n.backend.load_translations
-    I18n.enforce_available_locales = true # TODO: Shows deprecation warning if not set, check back later.
+    # TODO: Shows deprecation warning if not set, check back later.
+    I18n.enforce_available_locales = true
   end
 
   def self.require_app_files
@@ -38,7 +41,7 @@ class Env
   end
 
   configure do
-    set :root, Pathname.new( File.expand_path('../..', __FILE__) )
+    set :root, Pathname.new(File.expand_path('../..', __FILE__))
     set :db_name, "books_#{ ENV['RACK_ENV'] }"
     set :db_path, "postgres://localhost/#{ db_name }"
 

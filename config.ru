@@ -1,8 +1,9 @@
 require 'bundler'
 Bundler.require :default, ENV['RACK_ENV']
 
-require File.expand_path( File.join('..', 'app', 'app'), __FILE__ )
+require File.expand_path('../app/app', __FILE__)
 
-use Rack::Static, urls: [ '/stylesheets', '/javascripts', '/images' ], root: 'public'
+use Rack::Static, urls: ['/stylesheets', '/javascripts', '/images'],
+                  root: 'public'
 
 run App.new

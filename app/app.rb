@@ -1,8 +1,9 @@
 require 'sinatra/form_helpers'
-require File.expand_path( File.join('..', '..', 'lib', 'env'), __FILE__ )
+require File.expand_path('../../lib/env', __FILE__)
 
 Env.require_app_files
 
+# The web app
 class App < Sinatra::Base
   register Sinatra::Partial
   register Sinatra::Flash
