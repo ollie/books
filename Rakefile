@@ -56,7 +56,7 @@ namespace :db do
   task dump: :models do
     abort if Book.count.zero?
     file_path = Env.root.join("books_#{ ENV['RACK_ENV'] }.rb")
-    puts "Dumping to #{ file }"
+    puts "Dumping to #{ file_path }"
 
     File.open(file_path, 'w') do |file|
       file << "BOOKS = [\n"

@@ -154,13 +154,6 @@ BOOKS = [
     pages:  157
   },
   {
-    name:   'Guide to Better Smalltalk',
-    author: 'Kent Beck',
-    path:   'Kent_Becks_guide_to_better_Smalltalk.pdf',
-    page:   0,
-    pages:  427
-  },
-  {
     name:   'On Lisp: Advanced Techniques for Common Lisp',
     author: 'Paul Graham',
     path:   'On_Lisp.pdf',
@@ -168,25 +161,32 @@ BOOKS = [
     pages:  426
   },
   {
-    name:   'The Racket Guide',
-    author: 'M. Flatt, R. B. Findler, PLT',
-    path:   'Racket-Guide.pdf',
-    page:   0,
-    pages:  369
-  },
-  {
-    name:   'Deep into Pharo',
-    author: 'Bergel, Cassou, Ducasse, Laval',
-    path:   'Deep_into_Pharo_PBE2.pdf',
-    page:   0,
-    pages:  420
-  },
-  {
     name:   'SICP',
     author: 'H. Abelson, G. J. Sussman, J. Sussman',
     path:   'sicp.pdf',
     page:   0,
     pages:  634
+  },
+  {
+    name:   'Light and Matter',
+    author: 'Benjamin Cromwell',
+    path:   'light-and-matter.pdf',
+    page:   0,
+    pages:  1022
+  },
+  {
+    name:   'Programming from the Ground Up',
+    author: 'Jonathan Bartlett',
+    path:   'ProgrammingGroundUp-1-0-lettersize.pdf',
+    page:   0,
+    pages:  248
+  },
+  {
+    name:   'Pro Git, 2nd Edition',
+    author: 'Scott Chacon, Ben Straub',
+    path:   'progit-2.pdf',
+    page:   0,
+    pages:  574
   },
   {
     name:   'Introducing Erlang',
