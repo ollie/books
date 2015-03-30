@@ -9,9 +9,9 @@ gem 'pg'                           # Database
 gem 'sequel'                       # Database toolkit
 gem 'sequel_pg', require: 'sequel' # C adapter
 gem 'slim'                         # Templating
-gem 'compass'                      # CSS preprocessor
 
 group :development do
+  gem 'compass', require: false # CSS preprocessor
   gem 'pry'                     # Debugging
   gem 'pry-doc'                 # Debugging
   gem 'rake',    require: false # Task runner
