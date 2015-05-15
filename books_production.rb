@@ -1,19 +1,5 @@
 BOOKS = [
   {
-    name:   'Haskell',
-    author: 'Wikibooks.org',
-    path:   'Haskell.pdf',
-    page:   257,
-    pages:  611
-  },
-  {
-    name:   'Learning Java 4th Edition',
-    author: 'Patrick Niemeyer & Daniel Leuck',
-    path:   'learning_java_fourth_edition.pdf',
-    page:   393,
-    pages:  1010
-  },
-  {
     name:   'Practical Common Lisp',
     author: 'Peter Seibel',
     path:   'Practical_Common_Lisp.pdf',
@@ -35,13 +21,6 @@ BOOKS = [
     pages:  462
   },
   {
-    name:   'Haskell and Yesod',
-    author: 'Michael Snoyman',
-    path:   'Haskell and Yesod.pdf',
-    page:   63,
-    pages:  296
-  },
-  {
     name:   'The C Programming Language 2nd Edition',
     author: 'Brian W. Kernighan & Dennis M. Ritchie',
     path:   'Ritchie-Kernighan-The_C_Programming_Language_2_ed_.pdf',
@@ -49,25 +28,11 @@ BOOKS = [
     pages:  288
   },
   {
-    name:   'Learning Cocoa with Objective-C',
-    author: 'Paris Buttfield-Addison & Jonathon Manning',
-    path:   'learning_cocoa_with_objective-c_3rd_edition.pdf',
-    page:   66,
-    pages:  360
-  },
-  {
     name:   'ANSI Common Lisp',
     author: 'Paul Graham',
     path:   'ANSI_Common_Lisp.pdf',
     page:   74,
     pages:  450
-  },
-  {
-    name:   'RubyMotion',
-    author: 'Clay Allsopp',
-    path:   'ruby_motion.pdf',
-    page:   15,
-    pages:  108
   },
   {
     name:   'Programming Python 4th Edition',
@@ -84,13 +49,6 @@ BOOKS = [
     pages:  298
   },
   {
-    name:   'Programming in Haskell',
-    author: 'Graham Hutton',
-    path:   'programming-in-haskell.pdf',
-    page:   24,
-    pages:  184
-  },
-  {
     name:   'Programming Erlang',
     author: 'Joe Armstrong',
     path:   'Programming_Erlang.pdf',
@@ -98,39 +56,11 @@ BOOKS = [
     pages:  526
   },
   {
-    name:   'Learning Python 5th Edition',
-    author: 'Mark Lutz',
-    path:   'learning_python_fifth_edition.pdf',
-    page:   186,
-    pages:  1594
-  },
-  {
-    name:   'The Scheme Programming Language, 4th Edition',
-    author: 'R. Kent Dybvig',
-    path:   'The.Scheme.Programming.Language.4th.Edition.pdf',
-    page:   31,
-    pages:  400
-  },
-  {
     name:   'How to Design Programs, Second Edition',
     author: 'Felleisen, Findler, Flatt & Krishnamurthi',
     path:   'http://www.ccs.neu.edu/home/matthias/HtDP2e/part_prologue.html#string-append',
     page:   1,
     pages:  13
-  },
-  {
-    name:   'PMI-80 (Assembly)',
-    author: 'Ing. Jaroslav Vlach',
-    path:   'pmi80_kniha.pdf',
-    page:   0,
-    pages:  108
-  },
-  {
-    name:   'The Art of Assembly Language 2nd Edition',
-    author: 'Randall Hyde',
-    path:   'the_art_of_assembly_language_2nd_edition.pdf',
-    page:   0,
-    pages:  764
   },
   {
     name:   'Write Great Code',
@@ -175,13 +105,6 @@ BOOKS = [
     pages:  1022
   },
   {
-    name:   'Programming from the Ground Up',
-    author: 'Jonathan Bartlett',
-    path:   'ProgrammingGroundUp-1-0-lettersize.pdf',
-    page:   0,
-    pages:  248
-  },
-  {
     name:   'Pro Git, 2nd Edition',
     author: 'Scott Chacon, Ben Straub',
     path:   'progit-2.pdf',
@@ -208,5 +131,40 @@ BOOKS = [
     path:   'Realm-of-Racket.pdf',
     page:   316,
     pages:  316
+  },
+  {
+    name:   'Refactoring, Ruby Edition',
+    author: 'Fields, Harvie, Fowler, Beck',
+    path:   'Refactoring-Ruby-Edition.pdf',
+    page:   0,
+    pages:  481
+  },
+  {
+    name:   'The Rust Programming Language',
+    author: 'The Rust Team',
+    path:   'trpl-2015-05-13-a4.pdf',
+    page:   0,
+    pages:  266
+  },
+  {
+    name:   'Introducing Elixir',
+    author: 'Laurent, Eisenberg',
+    path:   'Introducing-Elixir.pdf',
+    page:   0,
+    pages:  210
+  },
+  {
+    name:   'Elixir Cookbook',
+    author: 'Paulo A. Pereira',
+    path:   'Elixir-Cookbook.pdf',
+    page:   0,
+    pages:  453
+  },
+  {
+    name:   'Metaprogramming Elixir',
+    author: 'Chris McCord',
+    path:   'Metaprogramming-Elixir.pdf',
+    page:   0,
+    pages:  126
   }
 ]

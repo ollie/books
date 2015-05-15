@@ -66,25 +66,4 @@ class App < Sinatra::Base
     flash.next[:success] = I18n.t('book_destroyed')
     redirect url('/')
   end
-
-  # get '/books/:id/page/:page' do
-  #   @book = Book.first!(id: params[:id])
-  #   @book.page = params[:page]
-  #   @book.save if @book.valid?
-  #   redirect url('/')
-  # end
-
-  # get '/books/:id/plus' do
-  #   @book = Book.first!(id: params[:id])
-  #   @book.page += 1
-  #   @book.save if @book.valid?
-  #   redirect url('/')
-  # end
-
-  # get '/books/:id/minus' do
-  #   @book = Book.first!(id: params[:id])
-  #   @book.page -= 1
-  #   @book.save if @book.valid?
-  #   redirect url('/')
-  # end
 end

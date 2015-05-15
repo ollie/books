@@ -4,29 +4,42 @@ class Book < Sequel::Model
   plugin :timestamps, update_on_create: true
   plugin :validation_helpers
 
-  def self.state_reading
-    exclude(read: true)
-      .where { page > 0 }
-      .order(Sequel.desc(:percentage), :created_at)
+  dataset_module do
+    def state_reading
+      exclude(read: true)
+        .where { page > 0 }
+        .order(Sequel.desc(:percentage), Sequel.desc(:created_at))
+    end
+
+    def state_new
+      exclude(read: true)
+        .where(page: 0)
+        .order(Sequel.desc(:percentage), Sequel.desc(:created_at))
+    end
+
+    def state_read
+      where(read: true).order(Sequel.desc(:created_at))
+    end
+
+    def list
+      order(:created_at)
+    end
   end
 
-  def self.state_new
-    exclude(read: true)
-      .where(page: 0)
-      .order(Sequel.desc(:percentage), :created_at)
-  end
+  private
 
-  def self.state_read
-    where(read: true).order(:created_at)
-  end
+  def validate
+    super
 
-  def self.list
-    order(:read, Sequel.desc(:percentage), :created_at)
+    validates_presence [:name, :path, :page, :pages]
+    validates_integer [:page, :pages]
+    validates_includes((0..pages), :page) if pages
   end
 
   def before_validation
     set_percentage
     set_read
+
     super
   end
 
@@ -42,12 +55,5 @@ class Book < Sequel::Model
   def set_read
     return if page.nil? || pages.nil?
     self.read = page == pages
-  end
-
-  def validate
-    super
-    validates_presence [:name, :path, :page, :pages]
-    validates_integer [:page, :pages]
-    validates_includes((0..pages), :page) if pages
   end
 end
