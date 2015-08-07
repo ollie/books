@@ -42,8 +42,8 @@ class Env
 
   configure do
     set :root, Pathname.new(File.expand_path('../..', __FILE__))
-    set :db_name, "books_#{ ENV['RACK_ENV'] }"
-    set :db_path, "postgres://localhost/#{ db_name }"
+    set :db_name, "books_#{ENV['RACK_ENV']}"
+    set :db_path, "postgres://localhost/#{db_name}"
 
     load_translations
   end

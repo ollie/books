@@ -34,17 +34,17 @@ end
 namespace :db do
   desc 'Create database'
   task create: :setup do
-    sh "createdb #{ Env.db_name }"
+    sh "createdb #{Env.db_name}"
   end
 
   desc 'Drop database'
   task drop: :setup do
-    sh "dropdb #{ Env.db_name }"
+    sh "dropdb #{Env.db_name}"
   end
 
   desc 'Migrate database'
   task migrate: :setup do
-    sh "sequel -E -m db/migrations #{ Env.db_path }"
+    sh "sequel -E -m db/migrations #{Env.db_path}"
   end
 
   desc 'Empty database'
@@ -55,8 +55,8 @@ namespace :db do
   desc 'Dump database as Ruby file'
   task dump: :models do
     abort if Book.count.zero?
-    file_path = Env.root.join("books_#{ ENV['RACK_ENV'] }.rb")
-    puts "Dumping to #{ file_path }"
+    file_path = Env.root.join("books_#{ENV['RACK_ENV']}.rb")
+    puts "Dumping to #{file_path}"
 
     File.open(file_path, 'w') do |file|
       file << "BOOKS = [\n"
@@ -64,11 +64,11 @@ namespace :db do
       Book.list.each do |book|
         file << <<-END.unindent(8)
           {
-            name:   #{ book.name.inspect },
-            author: #{ book.author.inspect },
-            path:   #{ book.path.inspect },
-            page:   #{ book.page.inspect },
-            pages:  #{ book.pages.inspect },
+            name:   #{book.name.inspect},
+            author: #{book.author.inspect},
+            path:   #{book.path.inspect},
+            page:   #{book.page.inspect},
+            pages:  #{book.pages.inspect},
           },
         END
       end
@@ -79,7 +79,7 @@ namespace :db do
 
   desc 'Load books into the database'
   task load: [:models, :empty] do
-    require Env.root.join("books_#{ ENV['RACK_ENV'] }.rb")
+    require Env.root.join("books_#{ENV['RACK_ENV']}.rb")
     abort if BOOKS.empty?
 
     BOOKS.each do |book|
@@ -89,7 +89,7 @@ namespace :db do
 
   desc 'Dump database'
   task dump_as_sql: :setup do
-    sh "pg_dump #{ Env.db_path } > books_development.sql"
+    sh "pg_dump #{Env.db_path} > books_development.sql"
   end
 end
 
