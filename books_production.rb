@@ -94,7 +94,7 @@ BOOKS = [
     name:   'SICP',
     author: 'H. Abelson, G. J. Sussman, J. Sussman',
     path:   'sicp.pdf',
-    page:   0,
+    page:   52,
     pages:  634
   },
   {
@@ -142,9 +142,9 @@ BOOKS = [
   {
     name:   'The Rust Programming Language',
     author: 'The Rust Team',
-    path:   'trpl-2015-05-13-a4.pdf',
-    page:   0,
-    pages:  266
+    path:   'trpl-2015-05-15.epub',
+    page:   516,
+    pages:  516
   },
   {
     name:   'Introducing Elixir',
