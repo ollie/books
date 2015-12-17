@@ -94,7 +94,7 @@ BOOKS = [
     name:   'SICP',
     author: 'H. Abelson, G. J. Sussman, J. Sussman',
     path:   'sicp.pdf',
-    page:   52,
+    page:   117,
     pages:  634
   },
   {
@@ -150,14 +150,14 @@ BOOKS = [
     name:   'Introducing Elixir',
     author: 'Laurent, Eisenberg',
     path:   'Introducing-Elixir.pdf',
-    page:   0,
+    page:   43,
     pages:  210
   },
   {
     name:   'Elixir Cookbook',
     author: 'Paulo A. Pereira',
     path:   'Elixir-Cookbook.pdf',
-    page:   0,
+    page:   50,
     pages:  453
   },
   {
@@ -166,5 +166,26 @@ BOOKS = [
     path:   'Metaprogramming-Elixir.pdf',
     page:   0,
     pages:  126
+  },
+  {
+    name:   'The Joy of Clojure',
+    author: 'Michael Fogus, Chris Houser',
+    path:   'The-Joy-of-Clojure-2nd-Edition.pdf',
+    page:   111,
+    pages:  520
+  },
+  {
+    name:   'Java Cookbook, 3rd Edition',
+    author: 'Ian F. Darwin',
+    path:   'Java-Cookbook-3rd-Edition.pdf',
+    page:   0,
+    pages:  896
+  },
+  {
+    name:   'Learning Java, 4th Edition',
+    author: 'P. Niemeyer, D. Leuck',
+    path:   'learning_java_fourth_edition.pdf',
+    page:   0,
+    pages:  1010
   }
 ]
