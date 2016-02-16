@@ -187,5 +187,12 @@ BOOKS = [
     path:   'learning_java_fourth_edition.pdf',
     page:   0,
     pages:  1010
+  },
+  {
+    name:   'Professional C++',
+    author: 'Marc Gregoire',
+    path:   'Professional-Cpp-3rd-Edition.pdf',
+    page:   51,
+    pages:  987
   }
-]
+].freeze
