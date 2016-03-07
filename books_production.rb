@@ -192,7 +192,28 @@ BOOKS = [
     name:   'Professional C++',
     author: 'Marc Gregoire',
     path:   'Professional-Cpp-3rd-Edition.pdf',
-    page:   51,
+    page:   82,
     pages:  987
+  },
+  {
+    name:   'Data Structures and Algorithms',
+    author: 'Granville Barnett',
+    path:   'data-structures-and-algorithms.pdf',
+    page:   21,
+    pages:  112
+  },
+  {
+    name:   'The Little Schemer 4th Edition',
+    author: 'Daniel P. Friedman, Matthias Felleisen',
+    path:   'The-Little-Schemer-4th.pdf',
+    page:   0,
+    pages:  211
+  },
+  {
+    name:   'Land of Lisp',
+    author: 'Conrad Barski',
+    path:   'Land-of-Lisp.pdf',
+    page:   0,
+    pages:  508
   }
 ].freeze
