@@ -89,7 +89,7 @@ namespace :db do
 
   desc 'Dump database'
   task dump_as_sql: :setup do
-    sh "pg_dump #{Env.db_path} > books_development.sql"
+    sh "pg_dump #{Env.db_path} > books_#{ENV['RACK_ENV']}.sql"
   end
 end
 
