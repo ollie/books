@@ -213,7 +213,14 @@ BOOKS = [
     name:   'Land of Lisp',
     author: 'Conrad Barski',
     path:   'Land-of-Lisp.pdf',
-    page:   0,
+    page:   123,
     pages:  508
+  },
+  {
+    name:   'Learning TADS 3',
+    author: 'Eric Eve',
+    path:   'Learning-TADS3.pdf',
+    page:   20,
+    pages:  341
   }
 ].freeze
