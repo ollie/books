@@ -3,63 +3,63 @@ BOOKS = [
     name:   'Practical Common Lisp',
     author: 'Peter Seibel',
     path:   'Practical_Common_Lisp.pdf',
-    page:   220,
+    page:   0,
     pages:  581
   },
   {
     name:   'Erlang Programming',
     author: 'Francesco Cesarini & Simon Thompson',
     path:   'erlang_programming.pdf',
-    page:   139,
+    page:   0,
     pages:  496
   },
   {
     name:   'Clean Code',
     author: 'Robert C. Martin',
     path:   'Clean_Code_-_A_Handbook_of_Agile_Software_Craftsmanship.pdf',
-    page:   114,
+    page:   0,
     pages:  462
   },
   {
     name:   'The C Programming Language 2nd Edition',
     author: 'Brian W. Kernighan & Dennis M. Ritchie',
     path:   'Ritchie-Kernighan-The_C_Programming_Language_2_ed_.pdf',
-    page:   54,
+    page:   0,
     pages:  288
   },
   {
     name:   'ANSI Common Lisp',
     author: 'Paul Graham',
     path:   'ANSI_Common_Lisp.pdf',
-    page:   74,
+    page:   0,
     pages:  450
   },
   {
     name:   'Programming Python 4th Edition',
     author: 'Mark Lutz',
     path:   'programming_python_4th_edition.pdf',
-    page:   216,
+    page:   0,
     pages:  1628
   },
   {
     name:   '21st Century C',
     author: 'Ben Klemens',
     path:   '21st_century_c.pdf',
-    page:   39,
+    page:   0,
     pages:  298
   },
   {
     name:   'Programming Erlang',
     author: 'Joe Armstrong',
     path:   'Programming_Erlang.pdf',
-    page:   66,
+    page:   0,
     pages:  526
   },
   {
     name:   'How to Design Programs, Second Edition',
     author: 'Felleisen, Findler, Flatt & Krishnamurthi',
     path:   'http://www.ccs.neu.edu/home/matthias/HtDP2e/part_prologue.html#string-append',
-    page:   1,
+    page:   0,
     pages:  13
   },
   {
@@ -94,7 +94,7 @@ BOOKS = [
     name:   'SICP',
     author: 'H. Abelson, G. J. Sussman, J. Sussman',
     path:   'sicp.pdf',
-    page:   117,
+    page:   0,
     pages:  634
   },
   {
@@ -150,14 +150,14 @@ BOOKS = [
     name:   'Introducing Elixir',
     author: 'Laurent, Eisenberg',
     path:   'Introducing-Elixir.pdf',
-    page:   43,
+    page:   0,
     pages:  210
   },
   {
     name:   'Elixir Cookbook',
     author: 'Paulo A. Pereira',
     path:   'Elixir-Cookbook.pdf',
-    page:   50,
+    page:   0,
     pages:  453
   },
   {
@@ -171,7 +171,7 @@ BOOKS = [
     name:   'The Joy of Clojure',
     author: 'Michael Fogus, Chris Houser',
     path:   'The-Joy-of-Clojure-2nd-Edition.pdf',
-    page:   111,
+    page:   0,
     pages:  520
   },
   {
@@ -192,14 +192,14 @@ BOOKS = [
     name:   'Professional C++',
     author: 'Marc Gregoire',
     path:   'Professional-Cpp-3rd-Edition.pdf',
-    page:   82,
+    page:   0,
     pages:  987
   },
   {
     name:   'Data Structures and Algorithms',
     author: 'Granville Barnett',
     path:   'data-structures-and-algorithms.pdf',
-    page:   21,
+    page:   0,
     pages:  112
   },
   {
@@ -213,14 +213,28 @@ BOOKS = [
     name:   'Land of Lisp',
     author: 'Conrad Barski',
     path:   'Land-of-Lisp.pdf',
-    page:   123,
+    page:   0,
     pages:  508
   },
   {
     name:   'Learning TADS 3',
     author: 'Eric Eve',
     path:   'Learning-TADS3.pdf',
-    page:   20,
+    page:   0,
     pages:  341
+  },
+  {
+    name:   'Learn C The Hard Way',
+    author: 'Somebody',
+    path:   'http://c.learncodethehardway.org/book/ex2.html',
+    page:   20,
+    pages:  52
+  },
+  {
+    name:   'Learning Elixir',
+    author: 'Kenny Ballou',
+    path:   'Learning-Elixir.pdf',
+    page:   0,
+    pages:  286
   }
 ].freeze
