@@ -45,11 +45,13 @@ class Book < Sequel::Model
 
   def set_percentage
     return if page.nil? || pages.nil?
-    if page.zero?
-      self.percentage = 0
-    else
-      self.percentage = page.to_f / pages * 100
-    end
+
+    self.percentage =
+      if page.zero?
+        0
+      else
+        page.to_f / pages * 100
+      end
   end
 
   def set_read

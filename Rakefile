@@ -10,7 +10,7 @@ class String
     number_of_chars = lines.first.index(/[^ ]/) unless number_of_chars
 
     joined = lines.map do |line|
-      line.gsub(/^ {#{ number_of_chars }}/, '')
+      line.gsub(/^ {#{number_of_chars}}/, '')
     end.join
 
     joined

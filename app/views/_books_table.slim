@@ -3,14 +3,14 @@
     thead
       tr
         th.caption
-          = I18n.t("books_#{ state }")
+          = I18n.t("books_#{state}")
           = ' '
           small
-            = "(#{ books.count })"
+            = "(#{books.count})"
         th Percentage
         th.text-center Page
     tbody
       == partial :book, collection: books.decorate_each(BookDecorator)
 - else
   .alert.alert-info
-    p = I18n.t("no_books_#{ state }")
+    p = I18n.t("no_books_#{state}")

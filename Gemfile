@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'puma'
 gem 'sinatra', '>= 1.4'            # Web app
 gem 'sinatra-partial'              # Sinatra partials
 gem 'sinatra-formhelpers-huii'     # Sinatra form helpers
