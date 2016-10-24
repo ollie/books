@@ -227,14 +227,14 @@ BOOKS = [
     name:   'Learn C The Hard Way',
     author: 'Somebody',
     path:   'http://c.learncodethehardway.org/book/ex2.html',
-    page:   20,
+    page:   0,
     pages:  52
   },
   {
     name:   'Learning Elixir',
     author: 'Kenny Ballou',
     path:   'Learning-Elixir.pdf',
-    page:   0,
+    page:   83,
     pages:  286
   }
 ].freeze
